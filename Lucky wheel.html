@@ -1,84 +1,199 @@
-!DOCTYPE html
-html lang=en
-head
-meta charset=UTF-8
-meta name=viewport content=width=device-width,initial-scale=1
-titleSpin Crush — Wheel of Lucktitle
-head
-body style=margin0;font-familyPoppins,Arial,sans-serif;backgroundradial-gradient(circle at top,#0f1f1a 0%,#0a0f0d 100%);color#f5f5f5;line-height1.6;overflow-xhidden;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Spin Crush — Wheel of Luck</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: radial-gradient(circle at top, #0f1f1a 0%, #0a0f0d 100%);
+      color: #f5f5f5;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    .wrap {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px 18px 120px;
+    }
+    header {
+      text-align: center;
+      margin-top: 20px;
+    }
+    header h1 {
+      font-size: 24px;
+      color: #f2c14e;
+      margin: 0;
+      letter-spacing: 1px;
+      text-shadow: 0 0 6px rgba(242, 193, 78, 0.4);
+    }
+    header p {
+      color: #b8c0bc;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+    .divider {
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, #0ad68f, #f2c14e);
+      border-radius: 2px;
+      margin: 16px auto;
+    }
+    h2 {
+      font-size: 18px;
+      color: #0ad68f;
+      margin-bottom: 8px;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 2px;
+      background: linear-gradient(90deg, #0ad68f, transparent);
+      margin-top: 3px;
+    }
+    p, li {
+      font-size: 14px;
+      color: #e0e0e0;
+    }
+    section {
+      margin: 20px 0;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 6px 0;
+    }
+    li {
+      margin: 6px 0;
+      padding-left: 22px;
+      position: relative;
+    }
+    li::before {
+      content: "★";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #f2c14e;
+      font-size: 12px;
+    }
+    .highlight {
+      color: #0ad68f;
+      font-weight: 600;
+    }
+    .info-box {
+      background: linear-gradient(145deg, rgba(10,214,143,0.08), rgba(242,193,78,0.05));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 14px 0;
+    }
+    .btn-fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(180deg, rgba(12,18,16,0.2) 0%, #0c120f 70%);
+      padding: 12px 16px 18px;
+      display: flex;
+      justify-content: center;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(6px);
+    }
+    .btn {
+      background: linear-gradient(90deg, #f2c14e, #e3a726);
+      color: #1a1a1a;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 12px;
+      padding: 14px 30px;
+      text-decoration: none;
+      font-size: 16px;
+      box-shadow: 0 4px 20px rgba(242,193,78,0.3);
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
 
-div style=max-width500px;margin0 auto;padding20px 18px 120px;
-  div style=text-aligncenter;margin-top20px;
-    h1 style=font-size24px;color#f2c14e;margin0;letter-spacing1px;text-shadow0 0 6px rgba(242,193,78,0.4);SPIN CRUSH — WHEEL OF LUCKh1
-    p style=color#b8c0bc;font-size14px;margin-top6px;🎡 One Spin, One Step Closerp
-  div
+  <div class="wrap">
+    <header>
+      <h1>SPIN CRUSH — WHEEL OF LUCK</h1>
+      <p>🎡 One Spin, One Step Closer</p>
+    </header>
 
-  div style=width80px;height3px;backgroundlinear-gradient(90deg,#0ad68f,#f2c14e);border-radius2px;margin16px auto;div
+    <div class="divider"></div>
 
-  div style=text-aligncenter;margin20px 0;
-    p style=font-size14px;color#e0e0e0;margin4px 0;Spin → Level Up → Unlock Bigger Rewardsbrspan style=color#0ad68f;font-weight600;Rewards are instantly sent to your account after each spin.spanp
-  div
+    <section>
+      <p style="text-align:center;">
+        Spin → Level Up → Unlock Bigger Rewards<br>
+        <span class="highlight">Rewards are instantly sent to your account after each spin.</span>
+      </p>
+    </section>
 
-  div style=margin20px 0;
-    h2 style=font-size18px;color#0ad68f;margin-bottom8px;positionrelative;🧭 How It Worksh2
-    div style=width40px;height2px;backgroundlinear-gradient(90deg,#0ad68f,transparent);margin-top3px;margin-bottom8px;div
-    ul style=list-stylenone;padding-left0;margin6px 0;
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★spanReach deposit milestones → span style=color#0ad68f;font-weight600;+1 Spinspanli
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★spanClear all milestones in a tier → span style=color#0ad68f;font-weight600;Upgrade Wheelspanli
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★spanProgress Route Silver → Gold → Diamond → Specialli
-    ul
-  div
+    <section>
+      <h2>🧭 How It Works</h2>
+      <ul>
+        <li>Reach deposit milestones → <span class="highlight">+1 Spin</span></li>
+        <li>Clear all milestones in a tier → <span class="highlight">Upgrade Wheel</span></li>
+        <li>Progress Route: Silver → Gold → Diamond → Special</li>
+      </ul>
+    </section>
 
-  div style=margin20px 0;
-    h2 style=font-size18px;color#0ad68f;margin-bottom8px;positionrelative;💠 Why Join Spin Crushh2
-    div style=width40px;height2px;backgroundlinear-gradient(90deg,#0ad68f,transparent);margin-top3px;margin-bottom8px;div
-    div style=backgroundlinear-gradient(145deg,rgba(10,214,143,0.08),rgba(242,193,78,0.05));border1px solid rgba(255,255,255,0.08);border-radius12px;padding14px 16px;margin14px 0;font-size14px;color#e0e0e0;
-      ✅ Every Spin has a chance to win a bonusbr
-      📈 Higher Levels = Bigger Rewardsbr
-      🧭 Clear Level-up Pathbr
-      📱 Spin Anytime, Anywhere
-    div
-  div
+    <section>
+      <h2>💠 Why Join Spin Crush?</h2>
+      <div class="info-box">
+        ✅ Every Spin has a chance to win a bonus<br>
+        📈 Higher Levels = Bigger Rewards<br>
+        🧭 Clear Level-up Path<br>
+        📱 Spin Anytime, Anywhere
+      </div>
+    </section>
 
-  div style=margin20px 0;
-    h2 style=font-size18px;color#0ad68f;margin-bottom8px;positionrelative;🚦 Quick Start (3 Steps)h2
-    div style=width40px;height2px;backgroundlinear-gradient(90deg,#0ad68f,transparent);margin-top3px;margin-bottom8px;div
-    ul style=list-stylenone;padding-left0;margin6px 0;
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★span1️⃣ Open Spin Crush → tap bLucky Wheelbli
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★span2️⃣ Deposit according to the threshold to unlock spinsli
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★span3️⃣ Spin & win — bonuses auto-transferli
-    ul
-  div
+    <section>
+      <h2>🚦 Quick Start (3 Steps)</h2>
+      <ul>
+        <li>1️⃣ Open Spin Crush → tap <b>Lucky Wheel</b></li>
+        <li>2️⃣ Deposit according to the threshold to unlock spins</li>
+        <li>3️⃣ Spin & win — bonuses auto-transfer</li>
+      </ul>
+    </section>
 
-  div style=margin20px 0;
-    h2 style=font-size18px;color#0ad68f;margin-bottom8px;positionrelative;🎁 New Player Rewardsh2
-    div style=width40px;height2px;backgroundlinear-gradient(90deg,#0ad68f,transparent);margin-top3px;margin-bottom8px;div
-    ul style=list-stylenone;padding-left0;margin6px 0;
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★span🎟 Login Bonus up to ₹55 instantlyli
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★span💳 First Deposit special Bonusli
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★span📝 Welcome Bonus Up to ₹50li
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★span🔄 Lucky Gullakli
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★span🎒 Mystery Gift in Inboxli
-    ul
-  div
+    <section>
+      <h2>🎁 New Player Rewards</h2>
+      <ul>
+        <li>🎟 Login Bonus: up to ₹55 instantly</li>
+        <li>💳 First Deposit: special Bonus</li>
+        <li>📝 Welcome Bonus: Up to ₹50</li>
+        <li>🔄 Lucky Gullak</li>
+        <li>🎒 Mystery Gift in Inbox</li>
+      </ul>
+    </section>
 
-  div style=margin20px 0;
-    h2 style=font-size18px;color#0ad68f;margin-bottom8px;positionrelative;🧩 Extra Offersh2
-    div style=width40px;height2px;backgroundlinear-gradient(90deg,#0ad68f,transparent);margin-top3px;margin-bottom8px;div
-    ul style=list-stylenone;padding-left0;margin6px 0;
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★span👑 VIP upgrade — daily & weekly rewardsli
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★span🎠 Top up to activate Lucky Wheel Spinli
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★span🗓 Weekly  Monthly Card instant bonusli
-      li style=margin6px 0;padding-left22px;positionrelative;font-size14px;color#e0e0e0;span style=positionabsolute;left0;top0;color#f2c14e;font-size12px;★span🧧 Promo code check our Telegram groupli
-    ul
-  div
+    <section>
+      <h2>🧩 Extra Offers</h2>
+      <ul>
+        <li>👑 VIP upgrade — daily & weekly rewards</li>
+        <li>🎠 Top up to activate Lucky Wheel Spin</li>
+        <li>🗓 Weekly / Monthly Card: instant bonus</li>
+        <li>🧧 Promo code: check our Telegram group</li>
+      </ul>
+    </section>
 
-  div style=text-aligncenter;font-size12px;color#999;margin-top30px;© 2025 Spin Crush — Play Responsibly. 18+div
-div
+    <footer>© 2025 Spin Crush — Play Responsibly. 18+</footer>
+  </div>
 
-div style=positionfixed;bottom0;left0;right0;backgroundlinear-gradient(180deg,rgba(12,18,16,0.2) 0%,#0c120f 70%);padding12px 16px 18px;displayflex;justify-contentcenter;border-top1px solid rgba(255,255,255,0.08);backdrop-filterblur(6px);
-  a href=httpsd35xoc2ezi3ki5.cloudfront.netsafe_spincrush.apk style=backgroundlinear-gradient(90deg,#f2c14e,#e3a726);color#1a1a1a;font-weight700;text-aligncenter;border-radius12px;padding14px 30px;text-decorationnone;font-size16px;box-shadow0 4px 20px rgba(242,193,78,0.3);⬇️ DOWNLOAD NOWa
-div
+  <div class="btn-fixed">
+    <a href="https://d35xoc2ezi3ki5.cloudfront.net/safe_spincrush.apk" class="btn">⬇️ DOWNLOAD NOW</a>
+  </div>
 
-body
-html
+</body>
+</html>
